@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+  <title>Танцевальная студия</title>
+   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/bootstrap-reboot.css" rel="stylesheet">
+  <link href="media.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+ </head>
+    
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="seedance.html">
+          <img style="width: 3em;height: 3em;" src="files/see_dance.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="seedance.html">Главная <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="seenews.html">О студии</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table.html">Расписание</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         <!-- <button type="button" class="btn btn-outline-info">Войти</button> -->
+         <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModalCentered" disabled>
+  Администратор
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenteredLabel">Авторизация</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" value="" class="form-control" id="kod" placeholder="Личный идентификатор" style="margin-top: 1em; width: 100%;">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-info font-shri button-for" >Войти</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+              
+        </form>
+      </div>
+    </nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="seedance.html" style="color: #17a2b8;">Главная</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Администрирование</li>
+  </ol>
+    
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <a href="admin.html" class="btn btn-info">Расписание</a>
+    </div>
+    <div class="col">
+        <a href="profile.html" class="btn btn-outline-info">Пользователи</a>
+    </div>
+      <div class="col">
+      <a href="client.html" class="btn btn-outline-info">Клиенты</a>
+    </div>
+  </div>
+    </div>
+<div class="container-fluid" style="margin-top: 15px">
+<div class="card-deck">
+  <div class="card">
+  <select class="custom-select" style="margin-bottom: 1em;">
+              <option selected="">Аренда зала</option>
+              <option value="1">Постановка номера</option>
+              <option value="2">хип-хоп</option>
+              <option value="3">вог</option>
+            </select>
+</div>
+  <div class="card">
+    <select class="custom-select" style="margin-bottom: 1em;">
+              <option selected="">10:00</option>
+              <option value="1">11:00</option>
+              <option value="2">12:00</option>
+              <option value="3">13:00</option>
+            </select>
+  </div>
+    <div class="card">
+           <select class="custom-select" style="margin-bottom: 1em;">
+              <option selected="">Большой зал</option>
+              <option value="1">Малый зал</option>
+            </select>
+</div>
+    <div class="card">
+          <a href="tableADD_.html" class="btn btn-info">ОК</a>
+</div>
+    </div>
+
+ 
+    </div>
+    <div class="container-fluid" style="margin-top: 15px">
+ <table class="table table-bordered text-center table-responsive">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ПН</th>
+      <th>ВТ</th>
+      <th>СР</th>
+      <th>ЧТ</th>
+      <th>ПТ</th>
+      <th>СБ</th>
+      <th>ВС</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">10:00</th>
+      <td style="background-color:forestgreen;">Хип-хоп<br>Преподаватель: Маро Мария<br>Большой зал</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+     
+    </tr>
+    <tr>
+      <th scope="row">11:00</th>
+      <td></td>
+      <td></td>
+      <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">12:00</th>
+      <td></td>
+      <td></td>
+      <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">13:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="background-color:forestgreen;">Хип-хоп<br>Преподаватель: Маро Мария<br>Большой зал</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">14:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">15:00</th>
+      <td></td>
+      <td></td>
+      <td style="background-color:forestgreen;">Хип-хоп<br>Преподаватель: Маро Мария<br>Большой зал</td>
+     <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">16:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="background-color:forestgreen;">Хип-хоп<br>Преподаватель: Маро Мария<br>Большой зал</td>
+    </tr>
+    <tr>
+      <th scope="row">17:00</th>
+      <td></td>
+     <td></td>
+      <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">18:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">19:00</th>
+      <td></td>
+      <td></td>
+      <td style="background-color:chocolate;">Вог<br>Преподаватель: Маро Мария<br>Малый зал</td>
+      <td></td>
+     <td style="background-color:forestgreen;">Хип-хоп<br>Преподаватель: Маро Мария<br>Большой зал</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">20:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">21:00</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</body>
+    
+<footer>
+    
+     <div class="card" style="margin-top: 2vw;">
+      
+      <div class="fot01">
+       <div class="card-body footer-fon">
+        <div class="row">
+           <div class="col-md-1">
+              <!-- Content -->
+            </div>
+            <div class="col-md-1">
+              <a href="http://vk.com"><img src="files/vk.png" class="img-fluid"  alt="Responsive image"></a>
+            </div>
+            <div class="col-md-1">
+              <a href="http://vk.com"><img src="files/facebook.png" class="img-fluid"  alt="Responsive image"></a>
+            </div>
+            <div class="col-md-1">
+                
+            </div>
+            <div class="col-md-4 vir">
+              <div class="qw">
+              <img src="files/geo.png" class="img-fluid"  alt="Responsive image">
+              </div>
+              <span class="fot-n">Иркутск, ул. Лермонтова, д. 81/3</span>
+            </div>
+            <div class="col-md-4 vir">
+              <div class="qw">
+              <img src="files/tele.png" class="img-fluid"  alt="Responsive image">
+              </div>
+              <span class="fot-n">+ 7 (3952) 544 - 654</span>
+            </div>     
+          </div>
+          </div>
+      </div> 
+      
+      <div class="fot02">
+          <div class="card-body footer-fon">
+           <div class="qwe">
+              <a href="http://vk.com"><img src="files/vk.png" class="img-fluid"  alt="Responsive image"></a>
+              <a href="http://vk.com"><img src="files/facebook.png" class="img-fluid"  alt="Responsive image"></a>
+              
+              <div class="qwe1">
+              <span class="fot-n">Иркутск, ул. Лермонтова, д. 81/3</span>
+              <span class="fot-n">+ 7 (3952) 544 - 654</span>
+             </div>
+            </div>
+           
+          
+          </div>
+      </div>
+    </div>
+ </footer>
+</html>
